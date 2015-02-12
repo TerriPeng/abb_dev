@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<robot name="wall" xmlns:xacro="http://ros.org/wiki/xacro">
+
+<xacro:macro name="wall_frame" params="pre suffix len x y z a">
+  <link name="${pre}wall_frame_${suffix}">
+    <visual>
+      <geometry>
+        <box size="0.04 0.04 ${len}"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="gray">
+        <color rgba="0.5 0.5 0.5 1"/>
+      </material>       
+    </visual>
+  </link>
+  <joint name="${pre}wall_frame_${suffix}" type="fixed">
+    <parent link="${pre}wall_base"/>
+    <child link="${pre}wall_frame_${suffix}"/>
+    <origin xyz="${x} ${y} ${z}" rpy="0 ${a} 0"/>
+  </joint>
+</xacro:macro>
+
+<xacro:macro name="wall" params="prefix length width height">
+  <link name="${prefix}wall_base"/>
+  <link name="${prefix}wall_top">
+    <visual>
+      <geometry>
+        <box size="${length-0.04} 0.005 ${height-0.04}"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="glass">
+        <color rgba="1 1 1 0.1"/>
+      </material>      
+    </visual>
+  </link>
+  <joint name="${prefix}wall_top" type="fixed">
+    <parent link="${prefix}wall_base"/>
+    <child link="${prefix}wall_top"/>
+    <origin xyz="0 0 ${(height-0.04)/2}" rpy="0 0 0"/>
+  </joint>
+
+  <xacro:wall_frame pre="${prefix}" suffix="1" len="${height}" x="${-length/2}" y="-0.0025" z="${height/2}" a="0"/>
+  <xacro:wall_frame pre="${prefix}" suffix="2" len="${height}" x="${length/2}" y="-0.0025" z="${height/2}" a="0"/>
+  <xacro:wall_frame pre="${prefix}" suffix="3" len="${length}" x="0" y="-0.0025" z="${height-0.02}" a="1.57079633"/>
+  <xacro:wall_frame pre="${prefix}" suffix="4" len="${length}" x="0" y="-0.0025" z="0.02" a="1.57079633"/>
+</xacro:macro>
+</robot>

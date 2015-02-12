@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<robot name="irb120_workcell" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find abb_irb120_support)/urdf/abb_irb120_macro.xacro"/>
+  <xacro:include filename="$(find robotiq_s_model_visualization)/cfg/s-model_mesh_macro.xacro"/>
+
+  <link name="world_frame"/>
+
+  <!-- Defining the robotic enclosure-->
+  <link name="enclosure">
+    <visual>
+      <origin xyz="1 -0.625 0" rpy="1.57079633 0 3.14159266"/>
+      <geometry>
+        <mesh filename="package://irb120_workcell_config/meshes/enclosure.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="glass">
+        <color rgba="1 1 1 0.3"/>
+      </material>      
+    </visual>
+  </link>
+  <joint name="enclosure_to_world" type="fixed">
+    <parent link="world_frame"/>
+    <child link="enclosure"/>
+    <origin xyz="0.45 0 0" rpy="0 0 0"/>
+  </joint>
+  
+  <!-- Defining the robot and mounting it in the enclosure -->
+  <xacro:abb_irb120 prefix=""/>
+  <joint name="robot_to_enclosure" type="fixed">
+    <parent link="world_frame"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0.025" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Defining the pegboard and placing it in front of the robot-->
+  <link name="pegboard">
+    <visual>
+      <origin xyz="0.225 0.15 0.01" rpy="1.57079633 0 -1.57079633"/>
+      <geometry>
+        <mesh filename="package://irb120_workcell_config/meshes/pegboard.STL" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0.3 0.3 1 1"/>
+      </material>
+    </visual>
+  </link>
+  <joint name="pegboard_to_floor" type="fixed">
+    <parent link="enclosure"/>
+    <child link="pegboard"/>
+    <origin xyz="-0.13 0 -0.005" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Defining the robotic manipulator and mounting it to the robot -->
+<!--   <xacro:s-model_mesh prefix="g_"/>
+  <joint name="gripper_to_robot" type="fixed">
+    <parent link="tool0"/>
+    <child link="g_palm"/>
+    <origin xyz="0 -0.161 0" rpy="1.570 -2.356 0"/>
+  </joint>
+ -->
+
+</robot>
+
+ 

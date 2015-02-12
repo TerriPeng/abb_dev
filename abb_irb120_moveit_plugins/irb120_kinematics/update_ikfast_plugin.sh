@@ -1,0 +1,1 @@
+rosrun moveit_ikfast create_ikfast_moveit_plugin.py abb_irb120 manipulator irb120_kinematics /home/culletom/ros/src/abb/irb120_kinematics/src/abb_irb120_manipulator_ikfast_solver.cpp

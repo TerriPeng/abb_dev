@@ -1,0 +1,520 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 0
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /MotionPlanning1
+        - /MotionPlanning1/Planned Path1
+      Splitter Ratio: 0.74256
+    Tree Height: 224
+  - Class: rviz/Help
+    Name: Help
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.03
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: moveit_rviz_plugin/MotionPlanning
+      Enabled: true
+      MoveIt_Goal_Tolerance: 0
+      MoveIt_Planning_Time: 5
+      MoveIt_Use_Constraint_Aware_IK: true
+      MoveIt_Warehouse_Host: 127.0.0.1
+      MoveIt_Warehouse_Port: 33829
+      Name: MotionPlanning
+      Planned Path:
+        Links:
+          All Links Enabled: true
+          Expand Joint Details: false
+          Expand Link Details: false
+          Expand Tree: false
+          Link Tree Style: Links in Alphabetic Order
+          back_wall_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          back_wall_frame_1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          back_wall_frame_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          back_wall_frame_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          back_wall_frame_4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          back_wall_top:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          floor:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          front_wall_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          front_wall_frame_1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          front_wall_frame_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          front_wall_frame_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          front_wall_frame_4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          front_wall_top:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_wall_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          left_wall_frame_1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_wall_frame_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_wall_frame_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_wall_frame_4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_wall_top:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link_1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link_4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link_5:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link_6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          plate:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_wall_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_wall_frame_1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_wall_frame_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_wall_frame_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_wall_frame_4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_wall_top:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          tool0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          world_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+        Loop Animation: false
+        Robot Alpha: 0.5
+        Show Robot Collision: false
+        Show Robot Visual: true
+        Show Trail: false
+        State Display Time: REALTIME
+        Trajectory Topic: /move_group/display_planned_path
+      Planning Metrics:
+        Payload: 1
+        Show Joint Torques: false
+        Show Manipulability: false
+        Show Manipulability Index: false
+        Show Weight Limit: false
+        TextHeight: 0.08
+      Planning Request:
+        Colliding Link Color: 255; 0; 0
+        Goal State Alpha: 1
+        Goal State Color: 0; 170; 127
+        Interactive Marker Size: 0
+        Joint Violation Color: 255; 0; 255
+        Planning Group: manipulator
+        Query Goal State: true
+        Query Start State: false
+        Show Workspace: false
+        Start State Alpha: 1
+        Start State Color: 0; 255; 0
+      Planning Scene Topic: /move_group/monitored_planning_scene
+      Robot Description: robot_description
+      Scene Geometry:
+        Scene Alpha: 1
+        Scene Color: 50; 230; 50
+        Scene Display Time: 0.2
+        Show Scene Geometry: true
+        Voxel Coloring: Z-Axis
+        Voxel Rendering: Occupied Voxels
+      Scene Robot:
+        Attached Body Color: 150; 50; 150
+        Links:
+          All Links Enabled: true
+          Expand Joint Details: false
+          Expand Link Details: false
+          Expand Tree: false
+          Link Tree Style: Links in Alphabetic Order
+          back_wall_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          back_wall_frame_1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          back_wall_frame_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          back_wall_frame_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          back_wall_frame_4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          back_wall_top:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          floor:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          front_wall_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          front_wall_frame_1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          front_wall_frame_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          front_wall_frame_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          front_wall_frame_4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          front_wall_top:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_wall_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          left_wall_frame_1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_wall_frame_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_wall_frame_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_wall_frame_4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_wall_top:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link_1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link_4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link_5:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link_6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          plate:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_wall_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_wall_frame_1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_wall_frame_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_wall_frame_3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_wall_frame_4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_wall_top:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          tool0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          world_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+        Robot Alpha: 0.5
+        Show Robot Collision: false
+        Show Robot Visual: true
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: world_frame
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+  Value: true
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 4.11653
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.06
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: -0.281615
+        Y: -0.203289
+        Z: -0.0471444
+      Name: Current View
+      Near Clip Distance: 0.01
+      Pitch: 1.1348
+      Target Frame: world_frame
+      Value: Orbit (rviz)
+      Yaw: 1.08176
+    Saved:
+      - Class: rviz/Orbit
+        Distance: 5.61271
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.06
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Focal Point:
+          X: 0.914596
+          Y: 0.810301
+          Z: -0.456319
+        Name: Orbit
+        Near Clip Distance: 0.01
+        Pitch: 0.604797
+        Target Frame: world_frame
+        Value: Orbit (rviz)
+        Yaw: -0.738234
+      - Class: rviz/Orbit
+        Distance: 5.61271
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.06
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Focal Point:
+          X: 0.914596
+          Y: 0.810301
+          Z: -0.456319
+        Name: Orbit
+        Near Clip Distance: 0.01
+        Pitch: 0.604797
+        Target Frame: world_frame
+        Value: Orbit (rviz)
+        Yaw: -0.738234
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 851
+  Help:
+    collapsed: false
+  Hide Left Dock: false
+  Hide Right Dock: false
+  Motion Planning:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd0000000100000000000002a20000030dfc0200000005fb000000100044006900730070006c006100790073010000002800000121000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a00560069006500770073000000010b000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e0067010000014f000001e60000017400ffffff000002750000030d00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Views:
+    collapsed: false
+  Width: 1309
+  X: 50
+  Y: 24
