@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<robot>
+<!-- 	<gazebo>
+		<static>true</static>
+	</gazebo> -->
+
+	<!-- ros_control plugin -->
+	<gazebo>
+	  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+	    <robotNamespace>/abb_irb120</robotNamespace>
+	    <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+	  </plugin>
+	</gazebo>
+
+	<gazebo reference="robot_base_link">
+		<material>Gazebo/Orange</material>
+		<!-- <turnGravityOff>true</turnGravityOff> -->
+	</gazebo>
+	<gazebo reference="robot_link_1">
+		<material>Gazebo/Orange</material>
+		<!-- <turnGravityOff>true</turnGravityOff> -->
+		<mu1>0.2</mu1>
+		<mu2>0.2</mu2>
+	</gazebo>
+	<gazebo reference="robot_link_2">
+		<material>Gazebo/Orange</material>
+		<!-- <turnGravityOff>true</turnGravityOff> -->
+		<mu1>0.2</mu1>
+		<mu2>0.2</mu2>
+	</gazebo>	
+	<gazebo reference="robot_link_3">
+		<material>Gazebo/Orange</material>
+		<!-- <turnGravityOff>true</turnGravityOff> -->
+		<mu1>0.2</mu1>
+		<mu2>0.2</mu2>
+	</gazebo>
+	<gazebo reference="robot_link_4">
+		<material>Gazebo/Orange</material>
+		<!-- <turnGravityOff>true</turnGravityOff> -->
+		<mu1>0.2</mu1>
+		<mu2>0.2</mu2>
+	</gazebo>
+	<gazebo reference="robot_link_5">
+		<material>Gazebo/Orange</material>
+		<!-- <turnGravityOff>true</turnGravityOff> -->
+		<mu1>0.2</mu1>
+		<mu2>0.2</mu2>
+	</gazebo>
+	<gazebo reference="robot_link_6">
+		<material>Gazebo/Black</material>
+		<!-- <turnGravityOff>true</turnGravityOff> -->
+		<mu1>0.2</mu1>
+		<mu2>0.2</mu2>
+	</gazebo>
+
+<!-- 	<gazebo reference="minnesota_board">
+		<material>Gazebo/Blue</material>
+	</gazebo>	
+	<gazebo reference="minnesota_disc_1">
+		<material>Gazebo/Brown</material>
+	</gazebo>	 -->	
+</robot>
