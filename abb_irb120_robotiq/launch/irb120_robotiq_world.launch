@@ -9,4 +9,11 @@
 	<!-- push robot_description to factory and spawn robot in gazebo -->
 	<node name="abb_irb120_robotiq_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
 	 args="-urdf -param robot_description -model abb_irb120_robotiq" />	
+
+   <!-- Start the publisher for the left hand (the only hand) -->
+<!--    <node pkg="robot_state_publisher" type="state_publisher" name="robotiq_hands_l_hand_robot_state_publisher">
+     <param name="publish_frequency" type="double" value="50.0" />
+     <remap from="joint_states" to="/robotiq_hands/left_hand/joint_states" />
+   </node> -->
+	 
 </launch>
