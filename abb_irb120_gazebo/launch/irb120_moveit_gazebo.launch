@@ -16,14 +16,8 @@
 
   <include file="$(find abb_irb120_control)/launch/irb120_moveit_control.launch" />
 
-  <!-- Remap follow_joint_trajectory -->
+  <!-- Remap follow_joint_trajectory NB: NEED TO CHANGE CONTROLLERS.YAML FILE (action_ns parameter) --> 
   <remap if="$(arg sim)" from="/follow_joint_trajectory" to="/arm_controller/follow_joint_trajectory"/>
-
-  <!-- industrial_robot_simulator: accepts robot commands and reports status -->
-  <node pkg="industrial_robot_simulator" type="industrial_robot_simulator" name="industrial_robot_simulator"/>
-  
-  <!-- joint_trajectory_action: provides actionlib interface for high-level robot control -->
-  <node pkg="industrial_robot_client" type="joint_trajectory_action" name="joint_trajectory_action"/>
 
   <include file="$(find abb_irb120_moveit_config)/launch/move_group.launch">
     <arg name="publish_monitored_planning_scene" value="true" />
