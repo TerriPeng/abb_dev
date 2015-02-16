@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+
+<robot name="abb_irb120_robotiq" xmlns:xacro="http://ros.org/wiki/xacro">
+	<xacro:property name="PI" value="3.1415926535897931" />
+
+	<xacro:include filename="$(find abb_irb120_robotiq_gazebo)/urdf/irb120_robotiq.gazebo"/>
+	<xacro:include filename="$(find abb_irb120_robotiq_gazebo)/urdf/materials.xacro"/>
+	<xacro:include filename="$(find abb_irb120_gazebo)/urdf/irb120_macro.xacro"/>
+	<xacro:include filename="$(find abb_irb120_gazebo)/urdf/irb120_transmission.xacro"/>
+	<xacro:include filename="$(find robotiq_s_model_visualization)/cfg/robotiq_hand_macro.urdf.xacro"/>
+
+	<xacro:abb_irb120 prefix="robot_"/>	
+	<xacro:abb_irb120_transmission prefix="robot_"/>	
+
+	<xacro:robotiq_hand prefix="robotiq_" reflect="-1" parent="robot_link_6">
+	   <origin xyz="0.06 0 0" rpy="0 0 ${-PI/2}"/>
+	</xacro:robotiq_hand>
+
+	<!-- Used for fixing robot to Gazebo world -->
+	<link name="world"/>
+	<joint name="fixed" type="fixed">
+	  <parent link="world"/>
+	  <child link="robot_base_link"/>
+	</joint>
+
+</robot>

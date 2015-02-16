@@ -52,11 +52,4 @@
 		<mu1>0.2</mu1>
 		<mu2>0.2</mu2>
 	</gazebo>
-
-<!-- 	<gazebo reference="minnesota_board">
-		<material>Gazebo/Blue</material>
-	</gazebo>	
-	<gazebo reference="minnesota_disc_1">
-		<material>Gazebo/Brown</material>
-	</gazebo>	 -->	
 </robot>
