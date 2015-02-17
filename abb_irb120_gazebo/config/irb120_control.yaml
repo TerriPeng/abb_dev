@@ -24,7 +24,7 @@ abb_irb120:
   joint5_position_controller:
     type: effort_controllers/JointPositionController
     joint: joint_5
-    pid: {p: 100.0, i: 0.0, d: 10.0, i_clamp: 0.0, i_clamp_min: 0.0, i_clamp_max: 0.0}
+    pid: {p: 100.0, i: 0.0, d: 0.0, i_clamp: 0.0, i_clamp_min: 0.0, i_clamp_max: 0.0}
   joint6_position_controller:
     type: effort_controllers/JointPositionController
     joint: joint_6

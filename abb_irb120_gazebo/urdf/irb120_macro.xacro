@@ -4,11 +4,9 @@
 		<!-- link list -->
 		<link name="${prefix}base_link">
 			<inertial>
-				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<!-- <origin xyz="-0.042039 8.0132E-05 0.079638" rpy="0 0 0"/> -->
 				<mass value="6.215"/>
-				<inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
-				<!-- <inertia ixx="0.024727" ixy="-8.0784E-05" ixz="0.001309" iyy="0.049128" iyz="-8.0419E-06" izz="0.047238"/> -->
+				<origin xyz="-0.042039286 8.0131669E-05 0.079637532" rpy="0 0 0"/>
+				<inertia ixx="0.024727161" ixy="-8.078424E-05" ixz="0.0013090238" iyy="0.049128491" iyz="-8.0419046E-06" izz="0.047237615"/>
 			</inertial>		
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
@@ -19,17 +17,15 @@
 			</visual>
 			<collision>
 				<geometry>
-					<mesh filename="package://abb_irb120_support/meshes/irb120/collision/base_link.stl"/>
+					<mesh filename="package://abb_irb120_support/meshes/irb120/visual/base_link.stl"/>
 				</geometry>		
 			</collision>
 		</link>
 		<link name="${prefix}link_1">
 			<inertial>
-				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<!-- <origin xyz="9.7686E-05 -0.0001193 0.23841" rpy="0 0 0"/> -->
 				<mass value="3.067" />
-				<inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
-				<!-- <inertia ixx="0.014217" ixy="-1.2858E-05" ixz="-2.3136E-05" iyy="0.014404" iyz="1.934E-05" izz="0.010453"/> -->
+				<origin xyz="9.7686412E-05 -0.00011929533 0.2384183" rpy="0 0 0"/>
+				<inertia ixx="0.014217456" ixy="-1.2857888E-05" ixz="-2.3136423E-05" iyy="0.014404147" iyz="1.9340368E-05" izz="0.010453301"/>
 			</inertial>
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
@@ -47,11 +43,9 @@
 		</link>
 		<link name="${prefix}link_2">
 			<inertial>
-				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<!-- <origin xyz="0.00077829 -0.002867 0.10124" rpy="0 0 0"/> -->
-				<mass value="3.9087"/>
-				<inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
-				<!-- <inertia ixx="0.060311" ixy="9.8343E-06" ixz="5.7241E-05" iyy="0.041569" iyz="-0.00050497" izz="0.025955"/> -->
+				<mass value="3.908667"/>
+				<origin xyz="0.00077829178 -0.0028670276 0.1012432" rpy="0 0 0"/>
+				<inertia ixx="0.06031109" ixy="9.8343135E-06" ixz="5.7240689E-05" iyy="0.04156899" iyz="-0.00050497005" izz="0.025954849"/>
 			</inertial>
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
@@ -69,11 +63,9 @@
 		</link>
 		<link name="${prefix}link_3">
 			<inertial>
-				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<!-- <origin xyz="0.022808 -0.0036856 0.057911" rpy="0 0 0"/> -->
-				<mass value="2.9437"/>
-				<inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
-				<!-- <inertia ixx="0.0083561" ixy="-8.0154E-05" ixz="0.0014288" iyy="0.016713" iyz="-0.00018223" izz="0.012698"/> -->
+				<mass value="2.94372"/>
+				<origin xyz="0.022807656 -0.0036856404 0.057910651" rpy="0 0 0"/>
+				<inertia ixx="0.0083560552" ixy="-8.0154465E-05" ixz="0.0014288355" iyy="0.016712978" iyz="-0.00018222659" izz="0.012698447"/>
 			</inertial>
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
@@ -91,11 +83,9 @@
 		</link>
 		<link name="${prefix}link_4">
 			<inertial>
-				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<!-- <origin xyz="0.075104 0.00015342 0.00040553" rpy="0 0 0"/> -->
-				<mass value="1.3279"/>
-				<inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
-				<!-- <inertia ixx="0.0028466" ixy="-2.1277E-05" ixz="-1.6435E-05" iyy="0.0040135" iyz="1.3134E-05" izz="0.0052535"/> -->
+				<mass value="1.3278642"/>
+				<origin xyz="0.075103843 0.00015341817 0.00040552537" rpy="0 0 0"/>
+				<inertia ixx="0.0028466109" ixy="-2.1276535E-05" ixz="-1.643522E-05" iyy="0.0040134585" iyz="1.313359E-05" izz="0.0052535097"/>
 			</inertial>
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
@@ -110,14 +100,14 @@
 					<mesh filename="package://abb_irb120_support/meshes/irb120/collision/link_4.stl"/>
 				</geometry>
 			</collision>
-			</link>
+		</link>
 		<link name="${prefix}link_5">
 			<inertial>
+				<mass value="0.54662685"/>
+				<!-- <origin xyz="-0.0010948374 3.6852479E-05 6.2216732E-05" rpy="0 0 0"/> -->
+				<!-- <inertia ixx="0.00040489103" ixy="1.6194294E-06" ixz="8.4680493E-07" iyy="0.00089282479" iyz="-1.5179204E-08" izz="0.00081546839"/> -->
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<!-- <origin xyz="-0.0010948 3.6852E-05 6.2217E-05" rpy="0 0 0"/> -->
-				<mass value="0.54663"/>
-				<inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
-				<!-- <inertia ixx="0.00040489" ixy="1.6194E-06" ixz="8.468E-07" iyy="0.00089282" iyz="-1.518E-08" izz="0.00081547"/> -->
+				<inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
 			</inertial>
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
@@ -135,11 +125,11 @@
 		</link>
 		<link name="${prefix}link_6">
 			<inertial>
+				<mass value="0.01367842"/>
+				<!-- <origin xyz="-0.0010620873 -0.00016958101 -1.3236698E-06" rpy="0 0 0"/> -->
+				<!-- <inertia ixx="2.9768142E-06" ixy="-7.662503E-09" ixz="-8.9149996E-11" iyy="1.6942673E-06" iyz="-3.0637261E-12" izz="1.6577E-06"/> -->
 				<origin xyz="0 0 0" rpy="0 0 0"/>
-				<!-- <origin xyz="-0.0010621 -0.00016958 -1.3237E-06" rpy="0 0 0"/> -->
-				<mass value="0.013678"/>
-				<inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
-				<!-- <inertia ixx="2.9768E-06" ixy="-7.6625E-09" ixz="-8.915E-11" iyy="1.6943E-06" iyz="-3.0637E-12" izz="1.6577E-06"/> -->
+				<inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
 			</inertial>
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
@@ -165,7 +155,7 @@
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 			<parent link="${prefix}base_link"/>
 			<child link="${prefix}link_1"/>
-			<limit effort="30" lower="-2.87979" upper="2.87979" velocity="4.36332"/>
+			<limit effort="150" lower="-2.87979" upper="2.87979" velocity="4.36332"/>
 			<axis xyz="0 0 1"/>
 			<dynamics damping="0.5" friction="0.0"/>
 		</joint>
@@ -173,7 +163,7 @@
 			<origin rpy="0 0 0" xyz="0 0.00075 0.29"/>
 			<parent link="${prefix}link_1"/>
 			<child link="${prefix}link_2"/>
-			<limit effort="30" lower="-1.91986" upper="1.91986" velocity="4.36332"/>
+			<limit effort="150" lower="-1.91986" upper="1.91986" velocity="4.36332"/>
 			<axis xyz="0 1 0"/>
 			<dynamics damping="0.5" friction="0.0"/>
 		</joint>
@@ -181,7 +171,7 @@
 			<origin rpy="0 0 0" xyz="0 0.004 0.27"/>
 			<parent link="${prefix}link_2"/>
 			<child link="${prefix}link_3"/>
-			<limit effort="30" lower="-1.91986" upper="1.22173" velocity="4.36332"/>
+			<limit effort="150" lower="-1.91986" upper="1.22173" velocity="4.36332"/>
 			<axis xyz="0 1 0"/>
 			<dynamics damping="0.5" friction="0.0"/>
 		</joint>
@@ -189,7 +179,7 @@
 			<origin rpy="0 0 0" xyz="0.1496 -0.00475 0.07"/>
 			<parent link="${prefix}link_3"/>
 			<child link="${prefix}link_4"/>
-			<limit effort="30" lower="-2.79253" upper="2.79253" velocity="5.58505"/>
+			<limit effort="150" lower="-2.79253" upper="2.79253" velocity="5.58505"/>
 			<axis xyz="1 0 0"/>
 			<dynamics damping="0.5" friction="0.0"/>
 		</joint>
@@ -197,7 +187,7 @@
 			<origin rpy="0 0 0" xyz="0.1524 0 0"/>
 			<parent link="${prefix}link_4"/>
 			<child link="${prefix}link_5"/>
-			<limit effort="30" lower="-2.094395" upper="2.094395" velocity="5.58505"/>
+			<limit effort="150" lower="-2.094395" upper="2.094395" velocity="5.58505"/>
 			<axis xyz="0 1 0"/>
 			<dynamics damping="0.5" friction="0.0"/>
 		</joint>
@@ -205,9 +195,9 @@
 			<origin rpy="0 0 0" xyz="0.066 0 0"/>
 			<parent link="${prefix}link_5"/>
 			<child link="${prefix}link_6"/>
-			<limit effort="30" lower="-6.98132" upper="6.98132" velocity="7.33038"/>
+			<limit effort="150" lower="-6.98132" upper="6.98132" velocity="7.33038"/>
 			<axis xyz="1 0 0"/>
-			<dynamics damping="0.5" friction="0.0"/>
+			<dynamics damping="0.2" friction="0.0"/>
 		</joint>
 		<joint name="${prefix}joint6-tool0" type="fixed">
 			<parent link="${prefix}link_6"/>

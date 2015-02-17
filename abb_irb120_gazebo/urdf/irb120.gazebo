@@ -22,41 +22,36 @@
 	<gazebo reference="base_link">
 		<material>Gazebo/Orange</material>
 		<turnGravityOff>true</turnGravityOff>
+		<selfCollide>false</selfCollide>
 	</gazebo>
 	<gazebo reference="link_1">
 		<material>Gazebo/Orange</material>
 		<turnGravityOff>true</turnGravityOff>
-		<mu1>0.2</mu1>
-		<mu2>0.2</mu2>
+		<selfCollide>false</selfCollide>
 	</gazebo>
 	<gazebo reference="link_2">
 		<material>Gazebo/Orange</material>
 		<turnGravityOff>true</turnGravityOff>
-		<mu1>0.2</mu1>
-		<mu2>0.2</mu2>
+		<selfCollide>false</selfCollide>
 	</gazebo>	
 	<gazebo reference="link_3">
 		<material>Gazebo/Orange</material>
 		<turnGravityOff>true</turnGravityOff>
-		<mu1>0.2</mu1>
-		<mu2>0.2</mu2>
+		<selfCollide>false</selfCollide>
 	</gazebo>
 	<gazebo reference="link_4">
 		<material>Gazebo/Orange</material>
 		<turnGravityOff>true</turnGravityOff>
-		<mu1>0.2</mu1>
-		<mu2>0.2</mu2>
+		<selfCollide>false</selfCollide>
 	</gazebo>
 	<gazebo reference="link_5">
 		<material>Gazebo/Orange</material>
 		<turnGravityOff>true</turnGravityOff>
-		<mu1>0.2</mu1>
-		<mu2>0.2</mu2>
+		<selfCollide>false</selfCollide>
 	</gazebo>
 	<gazebo reference="link_6">
 		<material>Gazebo/Black</material>
 		<turnGravityOff>true</turnGravityOff>
-		<mu1>0.2</mu1>
-		<mu2>0.2</mu2>
+		<selfCollide>false</selfCollide>
 	</gazebo>
 </robot>
