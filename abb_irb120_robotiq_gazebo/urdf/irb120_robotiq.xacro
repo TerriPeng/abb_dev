@@ -5,15 +5,15 @@
 
 	<xacro:include filename="$(find abb_irb120_robotiq_gazebo)/urdf/irb120_robotiq.gazebo"/>
 	<xacro:include filename="$(find abb_irb120_robotiq_gazebo)/urdf/materials.xacro"/>
-	<xacro:include filename="$(find abb_irb120_gazebo)/urdf/irb120_macro.xacro"/>
-	<xacro:include filename="$(find abb_irb120_gazebo)/urdf/irb120_transmission.xacro"/>
+	<xacro:include filename="$(find abb_irb120_support)/urdf/irb120_gazebo_macro.xacro"/>
+	<xacro:include filename="$(find abb_irb120_support)/urdf/irb120_transmission.xacro"/>
 	<xacro:include filename="$(find robotiq_s_model_visualization)/cfg/robotiq_hand_macro.urdf.xacro"/>
 
 	<xacro:abb_irb120 prefix="robot_"/>	
 	<xacro:abb_irb120_transmission prefix="robot_"/>	
 
-	<xacro:robotiq_hand prefix="robotiq_" reflect="-1" parent="robot_link_6">
-	   <origin xyz="0.06 0 0" rpy="0 0 ${-PI/2}"/>
+	<xacro:robotiq_hand prefix="robotiq_" reflect="-1" parent="robot_tool0">
+	   <origin xyz="0.054 0 0" rpy="0 0 ${-PI/2}"/>
 	</xacro:robotiq_hand>
 
 	<!-- Used for fixing robot to Gazebo world -->

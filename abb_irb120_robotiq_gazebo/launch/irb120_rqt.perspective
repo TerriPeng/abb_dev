@@ -37,7 +37,7 @@
                 }, 
                 "topics": {
                   "type": "repr", 
-                  "repr": "[u'/abb_irb120/joint1_position_controller/state/set_point', u'/abb_irb120/joint1_position_controller/state/error']"
+                  "repr": "u''"
                 }
               }, 
               "groups": {}
@@ -64,7 +64,7 @@
               "keys": {
                 "publishers": {
                   "type": "repr", 
-                  "repr": "u\"[{'type_name': 'std_msgs/Float64', 'topic_name': '/abb_irb120/joint1_position_controller/command', 'enabled': False, 'rate': 100.0, 'expressions': {u'/abb_irb120/joint1_position_controller/command/data': 'sin(i/80)'}, 'publisher_id': 6, 'counter': 7412}, {'type_name': 'std_msgs/Float64', 'topic_name': '/abb_irb120/joint2_position_controller/command', 'enabled': False, 'rate': 100.0, 'expressions': {}, 'publisher_id': 7, 'counter': 0}, {'type_name': 'std_msgs/Float64', 'topic_name': '/abb_irb120/joint3_position_controller/command', 'enabled': False, 'rate': 100.0, 'expressions': {}, 'publisher_id': 8, 'counter': 0}, {'type_name': 'std_msgs/Float64', 'topic_name': '/abb_irb120/joint4_position_controller/command', 'enabled': False, 'rate': 100.0, 'expressions': {}, 'publisher_id': 9, 'counter': 0}, {'type_name': 'std_msgs/Float64', 'topic_name': '/abb_irb120/joint5_position_controller/command', 'enabled': False, 'rate': 100.0, 'expressions': {}, 'publisher_id': 10, 'counter': 0}, {'type_name': 'std_msgs/Float64', 'topic_name': '/abb_irb120/joint6_position_controller/command', 'enabled': False, 'rate': 100.0, 'expressions': {}, 'publisher_id': 11, 'counter': 0}]\""
+                  "repr": "u\"[{'type_name': 'std_msgs/Float64', 'topic_name': '/abb_irb120/joint1_position_controller/command', 'enabled': False, 'rate': 100.0, 'expressions': {}, 'publisher_id': 0, 'counter': 8442}, {'type_name': 'std_msgs/Float64', 'topic_name': '/abb_irb120/joint2_position_controller/command', 'enabled': False, 'rate': 100.0, 'expressions': {}, 'publisher_id': 1, 'counter': 6654}, {'type_name': 'std_msgs/Float64', 'topic_name': '/abb_irb120/joint3_position_controller/command', 'enabled': False, 'rate': 100.0, 'expressions': {}, 'publisher_id': 2, 'counter': 6602}, {'type_name': 'std_msgs/Float64', 'topic_name': '/abb_irb120/joint4_position_controller/command', 'enabled': False, 'rate': 100.0, 'expressions': {}, 'publisher_id': 3, 'counter': 6554}, {'type_name': 'std_msgs/Float64', 'topic_name': '/abb_irb120/joint5_position_controller/command', 'enabled': False, 'rate': 100.0, 'expressions': {}, 'publisher_id': 4, 'counter': 6494}, {'type_name': 'std_msgs/Float64', 'topic_name': '/abb_irb120/joint6_position_controller/command', 'enabled': False, 'rate': 100.0, 'expressions': {}, 'publisher_id': 5, 'counter': 6418}]\""
                 }
               }, 
               "groups": {}
