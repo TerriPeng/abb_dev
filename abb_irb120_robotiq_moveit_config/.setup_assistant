@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: abb_irb120_robotiq_gazebo
+    relative_path: urdf/irb120_robotiq.urdf
+  SRDF:
+    relative_path: config/abb_irb120_robotiq.srdf
+  CONFIG:
+    generated_timestamp: 1425066726

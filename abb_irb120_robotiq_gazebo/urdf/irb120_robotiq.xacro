@@ -2,7 +2,6 @@
 
 <robot name="abb_irb120_robotiq" xmlns:xacro="http://ros.org/wiki/xacro">
 	<xacro:property name="PI" value="3.1415926535897931" />
-	<xacro:include filename="$(find abb_irb120_robotiq_gazebo)/urdf/irb120_robotiq.gazebo"/>
 	<xacro:include filename="$(find abb_irb120_support)/urdf/irb120_gazebo_macro.xacro"/>
 	<xacro:include filename="$(find robotiq_s_model_visualization)/cfg/robotiq_hand_macro.urdf.xacro"/>
 
