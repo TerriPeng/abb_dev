@@ -5,4 +5,4 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/abb_irb120_gripper.srdf
   CONFIG:
-    generated_timestamp: 1425285914
+    generated_timestamp: 1425302015

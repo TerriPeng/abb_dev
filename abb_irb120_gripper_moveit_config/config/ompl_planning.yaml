@@ -21,7 +21,7 @@ planner_configs:
     type: geometric::PRM
   PRMstarkConfigDefault:
     type: geometric::PRMstar
-abb_arm:
+manipulator:
   planner_configs:
     - SBLkConfigDefault
     - ESTkConfigDefault
