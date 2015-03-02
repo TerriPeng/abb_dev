@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: abb_irb120_gripper_support
+    relative_path: urdf/irb120_gripper.urdf
+  SRDF:
+    relative_path: config/abb_irb120_gripper.srdf
+  CONFIG:
+    generated_timestamp: 1425285914
