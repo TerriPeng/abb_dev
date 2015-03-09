@@ -5,9 +5,9 @@
 	<xacro:include filename="$(find abb_irb120_support)/urdf/irb120_gazebo_macro.xacro"/>
 	<xacro:include filename="$(find robotiq_s_model_visualization)/cfg/robotiq_hand_macro.urdf.xacro"/>
 
-	<xacro:abb_irb120 prefix="robot_"/>	
+	<xacro:abb_irb120 prefix=""/>	
 
-	<xacro:robotiq_hand prefix="robotiq_" reflect="-1" parent="robot_tool0">
+	<xacro:robotiq_hand prefix="robotiq_" reflect="-1" parent="tool0">
 	   <origin xyz="0.054 0 0" rpy="0 0 ${-PI/2}"/>
 	</xacro:robotiq_hand>
 
